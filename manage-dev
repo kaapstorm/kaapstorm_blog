@@ -1,0 +1,9 @@
+#!/bin/sh
+
+export DEPLOY_ENV=dev
+export SECRET_KEY=this-key-is-not-secret
+export ALLOWED_HOSTS='127.0.0.1 localhost'
+export DATABASE_URL='sqlite://./kaapstorm/sqlite3.db'
+export PYTHONPATH=submodules/onepageblog:$PYTHONPATH
+
+python3 manage.py $*
