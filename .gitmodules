@@ -1,0 +1,3 @@
+[submodule "submodules/onepageblog"]
+	path = submodules/onepageblog
+	url = git@github.com:kaapstorm/onepageblog.git
